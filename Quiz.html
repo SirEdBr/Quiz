@@ -2,14 +2,29 @@
 <html>
 <head>
 <title>Quiz Webpage</title>
+<script>
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<style>
+body {background-color:lightgrey;}
+</style>
 </head>
 <body>
-<h1>This is a quiz made by Edward Bristow!</h1>
+<h1 style="background-color:black;color:white;text-align:center;font-size:250%;">This is a quiz made by Edward Bristow!</h1>
+<center>
 <img src="http://bsc4success.com/wp-content/uploads/2015/10/Maths-Quiz.jpg"/>
-<a href="http://www.codecademy.com/">Click here to go to another webpage!</a>
-<p>What you need to do is type the answer to the ten questions in the answer box below.</p>
-<p>I like chocolate.</p>
-<p>And chips.</p>
-<a href="http://www.codecademy.com/"><img src="http://searchengineland.com/figz/wp-content/seloads/2012/04/penguin.jpg"/></a>
+<p style = "text-align:center;font-size:125%">What you need to do is type the answer to the ten questions in the answer box below.</p>
+<p id="demo" style="text-align:center;font-size:125%">Click the button below to start the maths quiz!</p>
+<button type="button" onclick="alert('Hello world!')" style="font-size:125%">Enter.</button>
+<br>
+<br>
+<form>
+  Answer:<br>
+  <input type="text" name="firstname">
+</form>
+</center>
 </body>
 </html>
