@@ -4,11 +4,28 @@
 <title>Quiz Webpage</title>
 <script>
 
-function myFunction() {
+function create() {
+    n1 = var x = Math.floor((Math.random() * 10) + 0);
+    n2 = var x = Math.floor((Math.random() * 10) + 0);
+}
+
+function check() {
+    if document.getElementById("answer").innerHTM = n1 x n2 {
+        document.getElementById("answer").innerHTM = ""
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
     document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+function start() {
+    document.getElementById("demo").innerHTM = "What is " + str(n1) + " x " + str(n2) + " ?"
 }
 </script>
 <style>
+div {
+    margin: auto;
+    border: 2px solid black;
+}
 body {background-color:lightgrey;}
 </style>
 </head>
@@ -17,14 +34,16 @@ body {background-color:lightgrey;}
 <center>
 <img src="http://bsc4success.com/wp-content/uploads/2015/10/Maths-Quiz.jpg"/>
 <p style = "text-align:center;font-size:125%">What you need to do is type the answer to the ten questions in the answer box below.</p>
-<p id="demo" style="text-align:center;font-size:125%">Click the button below to start the maths quiz!</p>
-<button type="button" onclick="alert('Hello world!')" style="font-size:125%">Enter.</button>
+<p id="demo" style="text-align:center;font-size:125%">Click the button below to start the multiplication maths quiz!</p>
+<button type="button" onclick="start()" style="font-size:125%">Enter.</button>
 <br>
 <br>
-<form>
+<form style="font-size:125%">
   Answer:<br>
-  <input type="text" name="firstname">
+  <input type="text" name="answer">
 </form>
+<p id="stats"></p>
 </center>
+<br>
 </body>
 </html>
