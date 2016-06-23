@@ -3,22 +3,35 @@
 <head>
 <title>Quiz Webpage</title>
 <script>
-
 function create() {
-    n1 = var x = Math.floor((Math.random() * 10) + 0);
-    n2 = var x = Math.floor((Math.random() * 10) + 0);
+    var n1 =Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
 }
 
 function check() {
-    if document.getElementById("answer").innerHTM = n1 x n2 {
+    if (document.getElementById("answer").innerHTM == str(n1*n2)) {
+        document.getElementById("answer").innerHTM = ""
+        var n3 = n3 + 1
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
+    else {
         document.getElementById("answer").innerHTM = ""
         document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
     }
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
+    
+    create()
+    document.getElementById("question").innerHTM = "What is " + str(n1) + " x " + str(n2) + " ?";
+}
+
+function next() {
+    check()
 }
 
 function start() {
-    document.getElementById("demo").innerHTM = "What is " + str(n1) + " x " + str(n2) + " ?"
+    var n3 = 0
+    create()
+    document.getElementById("question").innerHTM = "What is " + str(n1) + " x " + str(n2) + " ?";
+    
 }
 </script>
 <style>
@@ -28,21 +41,33 @@ div {
 }
 body {background-color:lightgrey;}
 </style>
+
 </head>
+
 <body>
 <h1 style="background-color:black;color:white;text-align:center;font-size:250%;">This is a quiz made by Edward Bristow!</h1>
 <center>
+
 <img src="http://bsc4success.com/wp-content/uploads/2015/10/Maths-Quiz.jpg"/>
+
 <p style = "text-align:center;font-size:125%">What you need to do is type the answer to the ten questions in the answer box below.</p>
-<p id="demo" style="text-align:center;font-size:125%">Click the button below to start the multiplication maths quiz!</p>
-<button type="button" onclick="start()" style="font-size:125%">Enter.</button>
+
+<p id="question" style="text-align:center;font-size:125%">Click the "Start a new game." button below to start the multiplication maths quiz!</p>
+
+<button type="button" onclick="start()" style="font-size:125%">Start a new game.</button>
+
+<button type="button" onclick="next()" style="font-size:125%">Enter.</button>
+
 <br>
 <br>
+
 <form style="font-size:125%">
   Answer:<br>
   <input type="text" name="answer">
 </form>
+
 <p id="stats"></p>
+
 </center>
 <br>
 </body>
