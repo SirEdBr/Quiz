@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Webpage</title>
+<script>
+function start2() {
+ alert("You have started the quiz!");
+ var n3 = 0;
+    var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+ var q1 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q1 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+}
+
+function check() {
+    if (document.getElementById("answer").innerHTM == (n1*n2).toString()) {
+        document.getElementById("answer").innerHTM = ""
+        var n3 = n3 + 1
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
+    else {
+        document.getElementById("answer").innerHTM = ""
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
+    
+    var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+    document.getElementById("question").innerHTM = "What is " + n1.toString() + " x " + n2.toString() + " ?";
+}
+
+function next() {
+    check()
+}
+
+function start() {
+    var n3 = 0
+    var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+    document.getElementById("question").innerHTM = "What is " + n1.toString() + " x " + n2.toString() + " ?";
+    
+}
+</script>
+<style>
+div {
+    margin: auto;
+    border: 2px solid black;
+}
+body {background-color:lightgrey;}
+</style>
+
+</head>
+
+<body>
+<h1 style="background-color:black;color:white;text-align:center;font-size:250%;">This is a quiz made by Edward Bristow!</h1>
+<center>
+
+<img src="http://bsc4success.com/wp-content/uploads/2015/10/Maths-Quiz.jpg"/>
+
+<p style = "text-align:center;font-size:125%">What you need to do is type the answer to the ten questions in the answer box below.</p>
+
+<p id="question" style="text-align:center;font-size:125%">Click the "Start a new game." button below to start the multiplication maths quiz!</p>
+
+<button class="btn" onclick="start2()">Start a new game.</button>
+
+<br>
+<br>
+<script>
+function start2() {
+ alert("You have started the quiz!");
+ var n3 = 0;
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q1 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q1 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ var n1 = Math.floor((Math.random() * 10) + 0);
+ var n2 = Math.floor((Math.random() * 10) + 0);
+ var q2 = prompt("What is " + n1 + " times " + n2 + " ?");
+ if (q2 == (n1*n2).toString) {
+  n3 = n3 + 1
+ }
+ 
+}
+
+function check() {
+    if (document.getElementById("answer").innerHTM == (n1*n2).toString()) {
+        document.getElementById("answer").innerHTM = ""
+        var n3 = n3 + 1
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
+    else {
+        document.getElementById("answer").innerHTM = ""
+        document.getElementById("stats").innerHTM = "You have got " + n3 + " answers correct!"
+    }
+    
+    var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+    document.getElementById("question").innerHTM = "What is " + n1.toString() + " x " + n2.toString() + " ?";
+}
+
+function next() {
+    check()
+}
+
+function start() {
+    var n3 = 0
+    var n1 = Math.floor((Math.random() * 10) + 0);
+    var n2 = Math.floor((Math.random() * 10) + 0);
+    document.getElementById("question").innerHTM = "What is " + n1.toString() + " x " + n2.toString() + " ?";
+    
+}
+</script>
+<form style="font-size:125%">
+  Answer:<br>
+  <input type="text" name="answer">
+</form>
+
+<p id="stats"></p>
+
+</center>
+<br>
+</body>
+</html>
